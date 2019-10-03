@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveLayoutTestApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hC-Oy-jxU" userLabel="Top Container">
+                                <rect key="frame" x="0.0" y="20" width="414" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9PA-MH-bam"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J26-Ti-XKj">
+                                <rect key="frame" x="0.0" y="60" width="414" height="676"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWa-Rw-hQE" userLabel="Chart Container">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="526"/>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rp2-b7-OfI" userLabel="Buttons Container">
+                                        <rect key="frame" x="0.0" y="526" width="414" height="150"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fBw-Xn-GPb">
+                                                <rect key="frame" x="10" y="10" width="394" height="130"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jVO-nn-Jwr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="55"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AT-qs-Kjn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="118" height="55"/>
+                                                                <color key="backgroundColor" red="0.63137254899999995" green="0.67843137249999996" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="302" id="slC-v7-xLn">
+                                                                        <variation key="heightClass=compact" constant="140"/>
+                                                                    </constraint>
+                                                                </constraints>
+                                                                <variation key="default">
+                                                                    <mask key="constraints">
+                                                                        <exclude reference="slC-v7-xLn"/>
+                                                                    </mask>
+                                                                </variation>
+                                                                <variation key="heightClass=compact">
+                                                                    <mask key="constraints">
+                                                                        <include reference="slC-v7-xLn"/>
+                                                                    </mask>
+                                                                </variation>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zVS-7K-w1H">
+                                                                <rect key="frame" x="138" y="0.0" width="118" height="55"/>
+                                                                <color key="backgroundColor" red="0.63137254899999995" green="0.67843137249999996" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbG-Gf-v7a">
+                                                                <rect key="frame" x="276" y="0.0" width="118" height="55"/>
+                                                                <color key="backgroundColor" red="0.63137254899999995" green="0.67843137249999996" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <variation key="heightClass=regular-widthClass=compact" axis="horizontal" spacing="20"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="h3b-Ul-P9Y">
+                                                        <rect key="frame" x="0.0" y="75" width="394" height="55"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuR-fR-Dxh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="55"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejr-vH-MaI">
+                                                                <rect key="frame" x="207" y="0.0" width="187" height="55"/>
+                                                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </button>
+                                                        </subviews>
+                                                        <variation key="heightClass=regular-widthClass=compact" axis="horizontal" spacing="20"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="dOA-87-B4u"/>
+                                                </constraints>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <exclude reference="dOA-87-B4u"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact-widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <exclude reference="dOA-87-B4u"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact" distribution="fillEqually" spacing="20"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="fBw-Xn-GPb" firstAttribute="top" secondItem="rp2-b7-OfI" secondAttribute="top" constant="10" id="5wi-sc-3t8"/>
+                                            <constraint firstItem="fBw-Xn-GPb" firstAttribute="leading" secondItem="rp2-b7-OfI" secondAttribute="leading" constant="10" id="Olz-gf-x3c"/>
+                                            <constraint firstAttribute="trailing" secondItem="fBw-Xn-GPb" secondAttribute="trailing" constant="10" id="cgi-GO-Ddz"/>
+                                            <constraint firstAttribute="bottom" secondItem="fBw-Xn-GPb" secondAttribute="bottom" constant="10" id="vyz-LD-FUn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J26-Ti-XKj" secondAttribute="bottom" id="0XH-EN-iXv"/>
+                            <constraint firstItem="J26-Ti-XKj" firstAttribute="top" secondItem="6hC-Oy-jxU" secondAttribute="bottom" id="4Gz-4F-wma"/>
+                            <constraint firstItem="J26-Ti-XKj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4kQ-dt-lbp"/>
+                            <constraint firstItem="J26-Ti-XKj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mdh-tw-9EJ"/>
+                            <constraint firstItem="6hC-Oy-jxU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QPV-U1-mho"/>
+                            <constraint firstItem="6hC-Oy-jxU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RPF-OI-pVh"/>
+                            <constraint firstItem="6hC-Oy-jxU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yfd-Tg-bzD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.61607142857142" y="137.68115942028987"/>
+        </scene>
+    </scenes>
+</document>
